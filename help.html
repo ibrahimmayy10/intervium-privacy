@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yardım & SSS – Intervium</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+    header p { font-size: 13px; color: #6e6e73; margin-top: 4px; }
+
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6e6e73;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 32px 0 12px 4px;
+    }
+
+    .section-title:first-child { margin-top: 0; }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+
+    .faq-item {
+      padding: 18px 20px;
+      border-bottom: 1px solid #f2f2f7;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-item:last-child { border-bottom: none; }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .faq-question span {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1d1d1f;
+    }
+
+    .faq-chevron {
+      font-size: 12px;
+      color: #c7c7cc;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-answer {
+      font-size: 14px;
+      color: #3a3a3c;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.2s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-top: 10px;
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(90deg);
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .contact-card p {
+      font-size: 15px;
+      color: #3a3a3c;
+      margin-bottom: 14px;
+    }
+
+    .contact-card a {
+      display: inline-block;
+      background: #007aff;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { background: #0062cc; }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #6e6e73;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Intervium</h1>
+  <p>Yardım & Sık Sorulan Sorular</p>
+</header>
+
+<main>
+
+  <p class="section-title">Başlarken</p>
+  <div class="card">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Intervium nasıl çalışır?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Intervium, ARKit ile oluşturulmuş gerçekçi bir mülakat karakteriyle birebir sözlü mülakat yapmanı sağlar. Karakterin sorularını sesli olarak yanıtlarsın, uygulama ses tanıma ile yanıtını metne çevirir ve yapay zeka destekli bir değerlendirme üretir.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Hangi izinler neden gerekli?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Mikrofon izni sesli yanıtlarını algılamak, kamera izni ARKit karakterini görüntülemek ve yüz senkronizasyonu sağlamak, konuşma tanıma izni ise sesini metne dönüştürmek için gereklidir. Bu izinler yalnızca aktif mülakat sırasında kullanılır.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Hangi mesleklerde mülakat yapabilirim?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Yazılım geliştirme, ürün yönetimi, tasarım, finans ve daha pek çok kategoride mülakat yapabilirsin. Ana ekrandan meslek seçerek başlayabilirsin.</div>
+    </div>
+  </div>
+
+  <p class="section-title">Mülakat & Değerlendirme</p>
+  <div class="card">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Puanım nasıl hesaplanıyor?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Her mülakat sonunda teknik bilgi, iletişim becerisi ve detaylılık olmak üzere üç ayrı kategoride puan alırsın. Genel puan bu üç kategorinin ağırlıklı ortalamasıdır.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Mülakat geçmişimi görebilir miyim?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Evet. Alt menüdeki "Mülakatlar" sekmesinden tüm geçmiş mülakatlarına, puanlarına ve geri bildirimlerine ulaşabilirsin.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Mülakat karakterini değiştirebilir miyim?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Evet. Mülakat başlatmadan önce meslek seçiminin ardından farklı zorluk seviyelerinde ve kişilik tiplerine sahip karakterler arasından seçim yapabilirsin.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Ses tanıma doğru çalışmıyorsa ne yapmalıyım?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Sessiz bir ortamda tekrar dene. Ayarlar → Uygulama İzinleri bölümünden mikrofon ve konuşma tanıma izinlerinin açık olduğunu kontrol et. Sorun devam ederse uygulamayı yeniden başlat.</div>
+    </div>
+  </div>
+
+  <p class="section-title">Hesap & Teknik</p>
+  <div class="card">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Şifremi unuttum, ne yapmalıyım?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Giriş ekranındaki "Şifremi Unuttum" seçeneğine tıkla. E-posta adresine şifre sıfırlama bağlantısı gönderilecektir.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Verilerimi silebilir miyim?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Evet. Hesabını ve tüm verilerini kalıcı olarak silmek için destek ekibimizle iletişime geçebilirsin. Talep aldıktan sonra 30 gün içinde tüm veriler silinir.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Uygulama hangi cihazlarda çalışır?</span>
+        <span class="faq-chevron">›</span>
+      </div>
+      <div class="faq-answer">Intervium iOS 16 ve üzeri sürümlere sahip iPhone modellerinde çalışır. ARKit özellikleri için Face ID destekli bir cihaz gereklidir.</div>
+    </div>
+  </div>
+
+  <p class="section-title">Hâlâ yardıma mı ihtiyacın var?</p>
+  <div class="contact-card">
+    <p>Sorunun burada yanıt bulamadıysa bize doğrudan yazabilirsin.</p>
+    <a href="mailto:destek@intervium.app">Bize Yaz</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Intervium · İbrahim Ay</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
