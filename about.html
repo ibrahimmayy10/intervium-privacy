@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkında – Intervium</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+    header p { font-size: 13px; color: #6e6e73; margin-top: 4px; }
+
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .hero {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      background: linear-gradient(145deg, #1d1d1f, #3a3a3c);
+      border-radius: 22px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .app-name {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .app-version {
+      display: inline-block;
+      background: #f2f2f7;
+      border-radius: 8px;
+      padding: 4px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #6e6e73;
+      margin-bottom: 20px;
+    }
+
+    .app-description {
+      font-size: 15px;
+      color: #3a3a3c;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid #f2f2f7;
+    }
+
+    .info-row:last-child { border-bottom: none; }
+
+    .info-label {
+      font-size: 15px;
+      color: #1d1d1f;
+    }
+
+    .info-value {
+      font-size: 15px;
+      color: #6e6e73;
+      font-weight: 500;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6e6e73;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 28px 0 12px 4px;
+    }
+
+    .tech-grid {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .tech-item {
+      background: #f2f2f7;
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .tech-item .tech-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1d1d1f;
+    }
+
+    .tech-item .tech-desc {
+      font-size: 12px;
+      color: #6e6e73;
+      margin-top: 2px;
+    }
+
+    .developer-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .dev-avatar {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(145deg, #1d1d1f, #3a3a3c);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .dev-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1d1d1f;
+    }
+
+    .dev-title {
+      font-size: 13px;
+      color: #6e6e73;
+      margin-top: 2px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #6e6e73;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Intervium</h1>
+  <p>Hakkında</p>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="app-icon">🎙️</div>
+    <div class="app-name">Intervium</div>
+    <div class="app-version">Sürüm 1.0.0</div>
+    <p class="app-description">Intervium, ARKit ile oluşturulan gerçekçi karakterlerle birebir sözlü mülakat pratiği yapmanı sağlayan yapay zeka destekli bir simülasyon uygulamasıdır.</p>
+  </div>
+
+  <p class="section-title">Uygulama Bilgileri</p>
+  <div class="card">
+    <div class="info-row">
+      <span class="info-label">Sürüm</span>
+      <span class="info-value">1.0.0</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Platform</span>
+      <span class="info-value">iOS 16+</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Dil</span>
+      <span class="info-value">Türkçe</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Yayın Tarihi</span>
+      <span class="info-value">2026</span>
+    </div>
+  </div>
+
+  <p class="section-title">Kullanılan Teknolojiler</p>
+  <div class="tech-grid">
+    <div class="tech-item">
+      <div class="tech-name">ARKit</div>
+      <div class="tech-desc">3D karakter & yüz animasyonu</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-name">Speech Framework</div>
+      <div class="tech-desc">Gerçek zamanlı ses tanıma</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-name">AVFoundation</div>
+      <div class="tech-desc">Metinden sese dönüşüm</div>
+    </div>
+    <div class="tech-item">
+      <div class="tech-name">Claude AI</div>
+      <div class="tech-desc">Mülakat değerlendirme</div>
+    </div>
+  </div>
+
+  <p class="section-title">Geliştirici</p>
+  <div class="developer-card">
+    <div class="dev-avatar">İA</div>
+    <div>
+      <div class="dev-name">İbrahim Ay</div>
+      <div class="dev-title">iOS Geliştirici</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Intervium · İbrahim Ay · Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
